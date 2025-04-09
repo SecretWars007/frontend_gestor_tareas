@@ -1,0 +1,213 @@
+/* :root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+* {
+  font-family: "Poppins";
+}
+
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #dde5f4;
+  height: 100vh;
+}
+
+.screen-1 {
+  background: #f1f7fe;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  box-shadow: 0 0 2em #e6e9f9;
+  gap: 2em;
+}
+
+.screen-1 .logo {
+  margin-top: -3em;
+}
+
+.screen-1 .email {
+  background: white;
+  box-shadow: 0 0 2em #e6e9f9;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  border-radius: 20px;
+  color: #4d4d4d;
+  margin-top: -3em;
+}
+
+.screen-1 .email input {
+  outline: none;
+  border: none;
+}
+
+.screen-1 .email input::-moz-placeholder {
+  color: black;
+  font-size: 0.9em;
+}
+
+.screen-1 .email input:-ms-input-placeholder {
+  color: black;
+  font-size: 0.9em;
+}
+
+.screen-1 .email input::placeholder {
+  color: black;
+  font-size: 0.9em;
+}
+
+.screen-1 .email ion-icon {
+  color: #4d4d4d;
+  margin-bottom: -0.2em;
+}
+
+.screen-1 .password {
+  background: white;
+  box-shadow: 0 0 2em #e6e9f9;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  border-radius: 20px;
+  color: #4d4d4d;
+}
+
+.screen-1 .password input {
+  outline: none;
+  border: none;
+}
+
+.screen-1 .password input::-moz-placeholder {
+  color: black;
+  font-size: 0.9em;
+}
+
+.screen-1 .password input:-ms-input-placeholder {
+  color: black;
+  font-size: 0.9em;
+}
+
+.screen-1 .password input::placeholder {
+  color: black;
+  font-size: 0.9em;
+}
+
+.screen-1 .password ion-icon {
+  color: #4d4d4d;
+  margin-bottom: -0.2em;
+}
+
+.screen-1 .password .show-hide {
+  margin-right: -5em;
+}
+
+.screen-1 .login {
+  padding: 1em;
+  background: #3e4684;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+.screen-1 .footer {
+  display: flex;
+  font-size: 0.7em;
+  color: #5e5e5e;
+  gap: 14em;
+  padding-bottom: 10em;
+}
+
+.screen-1 .footer span {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
