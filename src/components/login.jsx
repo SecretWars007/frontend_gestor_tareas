@@ -16,7 +16,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const resp = await axios.post("http://localhost:3005/api/auth/login/", { correo, password }, { withCredentials: true });
+            const resp = await axios.post("https://backend-gestor-tareas-i6j0.onrender.com/api/auth/login/", { correo, password }, { withCredentials: true });
             // Set a cookie
             Cookies.set('token', resp.data, { expires: 7 });
             setCorreo('');

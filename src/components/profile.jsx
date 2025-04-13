@@ -16,7 +16,7 @@ const Login = () => {
     const handleProfile = async () => {
         try {
             alert(accessToken);
-            const resp = await axios.get('http://localhost:3005/api/auth/me/', {headers: {'Authorization': `Bearer ${accessToken}`} })
+            const resp = await axios.get('https://backend-gestor-tareas-i6j0.onrender.com/api/auth/me/', {headers: {'Authorization': `Bearer ${accessToken}`} })
             .then((res) => res.data)
             .catch((err) => console.error(err));
             console.log(resp);

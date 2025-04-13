@@ -6,13 +6,13 @@ import Button from 'react-bootstrap/Button';
 import { useNavigate } from "react-router-dom";
 const Tareas = () => {
   const [tareas, setTareas] = useState([]);
-  const [mensaje, setMensaje] = useState([]);
+  const [setMensaje] = useState([]);
   const navigate = useNavigate();
-  const [error, setError] = useState(null);
+  const [setError] = useState(null);
     // Get a cookie
     const token = Cookies.get('token');
   useEffect(() => {
-    axios.get('http://localhost:3005/api/tasks/',{headers: {Authorization: `Bearer ${token}`  }})
+    axios.get('https://backend-gestor-tareas-i6j0.onrender.com/api/tasks/',{headers: {Authorization: `Bearer ${token}`  }})
       .then((response) => setTareas(response.data))
       .catch((error) => console.error('Error al obtener clientes', error));
   }, [token]);
@@ -20,7 +20,7 @@ const Tareas = () => {
    const handleEliminar = async (req) => {
         setError(null);
         try {
-            await axios.delete('http://localhost:3005/api/tasks/'+req,{headers: {Authorization: `Bearer ${token}`  }})
+            await axios.delete('https://backend-gestor-tareas-i6j0.onrender.com/api/tasks/'+req,{headers: {Authorization: `Bearer ${token}`  }})
             .then((response) => setMensaje(response.data))
             .catch((error) => console.error('Error al eliminar la tarea', error));
             alert("tarea eliminada");
@@ -39,7 +39,7 @@ const handleActualizarEstado = async (req, estado) => {
                 estado = 2
               }
             }
-            await axios.put('http://localhost:3005/api/tasks/'+req,{ estado },{headers: {Authorization: `Bearer ${token}`  }})
+            await axios.put('https://backend-gestor-tareas-i6j0.onrender.com/api/tasks/'+req,{ estado },{headers: {Authorization: `Bearer ${token}`  }})
             .then((response) => setMensaje(response.data))
             .catch((error) => console.error('Error al actualizar el estado la tarea', error));
             alert("Estado de tarea actualizada");

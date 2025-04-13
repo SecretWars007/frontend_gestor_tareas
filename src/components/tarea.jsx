@@ -16,7 +16,7 @@ const Register = () => {
         setError(null);
 
         try {
-            await axios.post("http://localhost:3005/api/tasks/", { titulo, descripcion, fechaLimite }, {headers: {Authorization: `Bearer ${token}`  }});
+            await axios.post("https://backend-gestor-tareas-i6j0.onrender.com/api/tasks/", { titulo, descripcion, fechaLimite }, {headers: {Authorization: `Bearer ${token}`  }});
             alert("tarea registrada con éxito");
             navigate("/tareas");
         } catch (err) {

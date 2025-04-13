@@ -15,7 +15,7 @@ const Register = () => {
         setError(null);
 
         try {
-            await axios.post("http://localhost:3005/api/auth/", { nombre, correo, password }, { withCredentials: true });
+            await axios.post("https://backend-gestor-tareas-i6j0.onrender.com/api/auth/", { nombre, correo, password }, { withCredentials: true });
             alert("Usuario registrado con éxito");
             navigate("/");
         } catch (err) {
