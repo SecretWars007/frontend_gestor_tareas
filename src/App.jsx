@@ -35,16 +35,24 @@
 // export default App
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/navbar';
+
 import Home from './pages/home';
 import Login from './components/login';
-
+import Register from './components/register';
+import Profile from './components/profile';
+import Tareas from './components/tareas';
+import Tarea from './components/tarea'
 const App = () => {
   return (
     <Router>
       <Routes>
         {/* <Route path="/" element={<Home />} /> */}
         <Route path="/" element={<Login />} /> 
+        <Route path="/register" element={<Register />} /> 
+        <Route path="/home" element={<Home />} />
+        <Route path="/profile" element={<Profile />} /> 
+        <Route path="/tareas" element={<Tareas />} /> 
+        <Route path="/tarea" element={<Tarea />} /> 
       </Routes>
     </Router>
   );
